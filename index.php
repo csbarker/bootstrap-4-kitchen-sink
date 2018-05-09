@@ -10,8 +10,7 @@ foreach ($bootstrap_includes as $file) {
     include($file);
 }
 
-?>
-
+$final_html = <<<PRE
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,9 +57,14 @@ foreach ($bootstrap_includes as $file) {
     <div class="container">
         <div class="row">
             <div class="col">
-                <?php echo $output ?>
+                $output
             </div>
         </div>
     </div>
 </body>
 </html>
+PRE;
+
+file_put_contents('index.html', $final_html);
+header('Location: index.html');
+exit;
