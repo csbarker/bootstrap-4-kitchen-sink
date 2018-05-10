@@ -45,10 +45,7 @@ $final_html = <<<PRE
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#"><strong>PROTIP:</strong> CTRL+F is your friend</a>
                 </li>
             </div>
         </div>
@@ -57,7 +54,17 @@ $final_html = <<<PRE
     <div class="container">
         <div class="row">
             <div class="col">
+                <div class="alert alert-info" role="alert">
+                    Note: this is intended to be used as a quick overview/reference. Visit <a href="https://getbootstrap.com/docs/">https://getbootstrap.com/docs/</a> for full documentation!
+                </div>
+
                 $output
+
+                <hr>
+                
+                <div class="alert alert-info" role="alert">
+                Note: this is intended to be used as a quick overview/reference. Visit <a href="https://getbootstrap.com/docs/">https://getbootstrap.com/docs/</a> for full documentation!
+                </div>
             </div>
         </div>
     </div>
